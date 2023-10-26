@@ -22,3 +22,4 @@ This is a simple web application for viewing a menu and making purchases.
 - `script.js`: JavaScript code for fetching menu data and handling user interactions.
 - ...
 
+# phase-1-project
