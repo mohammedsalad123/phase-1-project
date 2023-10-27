@@ -6,7 +6,7 @@ let menu = []
 
 
 function getMenu (){
-    fetch(" http://localhost:3000/menu")
+    fetch("https://my-json-server.typicode.com/mohammedsalad123/phase-1-project/menu")
     .then(res=>res.json())
     .then(data=>{
         menu=[...data]
@@ -50,7 +50,7 @@ function dispalaymenuList (menu){
 
       const item = {...menu};
       item.qnty = menu.qnty - 1;
-      fetch(`http://localhost:3000/menu/${item.id}`,{
+      fetch(`https://my-json-server.typicode.com/mohammedsalad123/phase-1-project/menu${item.id}`,{
         method:"PATCH",
         headers:{
             "Content-Type": "application/json",
